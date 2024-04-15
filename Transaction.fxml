@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="818.0" prefWidth="1097.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mainpkg.TransactionController">
+   <children>
+      <Button layoutX="84.0" layoutY="348.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="210.0" text="Show All Transaction" wrapText="true" />
+      <TableView layoutX="84.0" layoutY="71.0" prefHeight="265.0" prefWidth="928.0">
+         <columns>
+            <TableColumn prefWidth="75.0" text="No of" />
+            <TableColumn prefWidth="86.0" text="Id" />
+            <TableColumn prefWidth="209.0" text="Name" />
+            <TableColumn prefWidth="198.0" text="Email" />
+            <TableColumn prefWidth="107.0" text="Amount" />
+            <TableColumn prefWidth="107.0" text="Date" />
+            <TableColumn prefWidth="145.0" text="Transaction Count" />
+         </columns>
+      </TableView>
+      <Label layoutX="148.0" layoutY="413.0" text="Id:" />
+      <Label layoutX="147.0" layoutY="448.0" text="Name:" />
+      <Label layoutX="147.0" layoutY="486.0" text="Email:" />
+      <Label layoutX="147.0" layoutY="525.0" text="Amount:" />
+      <Label layoutX="431.0" layoutY="414.0" text="Date:" />
+      <Button fx:id="goBackToTreasurerDashboard" layoutX="802.0" layoutY="659.0" mnemonicParsing="false" onAction="#switchToTreasurerDashboard" prefHeight="31.0" prefWidth="158.0" text="Return to dashboard" wrapText="true" />
+      <Label layoutX="431.0" layoutY="453.0" prefHeight="45.0" prefWidth="82.0" text="Transaction Count:" wrapText="true" />
+      <DatePicker layoutX="501.0" layoutY="411.0" prefHeight="31.0" prefWidth="187.0" />
+      <TextField layoutX="217.0" layoutY="411.0" />
+      <TextField layoutX="217.0" layoutY="447.0" />
+      <TextField layoutX="217.0" layoutY="483.0" />
+      <TextField layoutX="217.0" layoutY="519.0" />
+      <TextField layoutX="538.0" layoutY="460.0" prefHeight="31.0" prefWidth="150.0" />
+      <Button layoutX="802.0" layoutY="408.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="210.0" text="Verify With Transaction List" wrapText="true" />
+      <Label layoutX="802.0" layoutY="454.0" prefHeight="31.0" prefWidth="210.0" style="-fx-background-color: Gray;" />
+      <Label layoutX="145.0" layoutY="567.0" prefHeight="45.0" prefWidth="124.0" text="Transaction Count More Than 1?:" wrapText="true" />
+      <RadioButton layoutX="146.0" layoutY="626.0" mnemonicParsing="false" text="Yes" />
+      <RadioButton layoutX="147.0" layoutY="653.0" mnemonicParsing="false" text="No" />
+      <Button layoutX="140.0" layoutY="687.0" mnemonicParsing="false" onAction="#switchToSelectingMultipleDate" prefHeight="54.0" prefWidth="187.0" text="Select Multiple Date for Multiple Transaction:" wrapText="true" />
+   </children>
+</AnchorPane>
