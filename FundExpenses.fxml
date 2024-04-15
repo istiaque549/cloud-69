@@ -12,15 +12,16 @@
       <Label layoutX="66.0" layoutY="56.0" text="Avaiable Fund:" />
       <Label layoutX="174.0" layoutY="56.0" prefHeight="21.0" prefWidth="134.0" style="-fx-background-color: Gray;" />
       <Label layoutX="66.0" layoutY="388.0" text="Budget:" />
-      <TableView layoutX="63.0" layoutY="100.0" prefHeight="200.0" prefWidth="330.0">
+      <TableView layoutX="63.0" layoutY="100.0" prefHeight="200.0" prefWidth="405.0">
         <columns>
+          <TableColumn prefWidth="75.0" text="No of" />
           <TableColumn prefWidth="137.0" text="Expense Subject" />
             <TableColumn prefWidth="102.0" text="Amount" />
             <TableColumn prefWidth="89.0" text="Date" />
         </columns>
       </TableView>
       <TextField layoutX="124.0" layoutY="388.0" />
-      <Button layoutX="124.0" layoutY="431.0" mnemonicParsing="false" text="Send" />
+      <Button layoutX="124.0" layoutY="431.0" mnemonicParsing="false" text="Set Budget" />
       <Button layoutX="63.0" layoutY="316.0" mnemonicParsing="false" text="Show Expense Request" />
       <Button fx:id="goBackToFund" layoutX="499.0" layoutY="100.0" mnemonicParsing="false" onAction="#switchToFund" text="Return to Fund" />
    </children>
