@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="817.0" prefWidth="795.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171" fx:controller="IT_Admin.EmployeeReportController">
+   <children>
+      <Label layoutX="339.0" layoutY="88.0" text="Employee Report " underline="true" />
+      <TableView fx:id="employeeReportTableView" layoutX="179.0" layoutY="156.0" prefHeight="200.0" prefWidth="463.0">
+        <columns>
+          <TableColumn fx:id="nameTableColumn" prefWidth="144.0" text="Name" />
+          <TableColumn fx:id="roleTableColumn" prefWidth="157.0" text="Role" />
+            <TableColumn fx:id="joiningTableColumn" prefWidth="161.0" text="Joining Date" />
+        </columns>
+      </TableView>
+      <Label layoutX="152.0" layoutY="442.0" text="Employee Name">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="152.0" layoutY="506.0" text="Employee Role">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="152.0" layoutY="562.0" text="Joining Date">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="employeeNameTextField" layoutX="324.0" layoutY="439.0" prefHeight="31.0" prefWidth="208.0" />
+      <TextField fx:id="employeeRoleTextField" layoutX="330.0" layoutY="503.0" prefHeight="31.0" prefWidth="208.0" />
+      <DatePicker fx:id="joiningDatePicker" layoutX="321.0" layoutY="559.0" />
+      <Button layoutX="152.0" layoutY="631.0" mnemonicParsing="false" onAction="#addInfoOnClick" text="Add Info" />
+      <Button layoutX="629.0" layoutY="712.0" mnemonicParsing="false" onAction="#goBackToNavigationBarOnClick" text="Go Back" />
+   </children>
+</AnchorPane>
