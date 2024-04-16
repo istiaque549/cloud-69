@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="710.0" prefWidth="882.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171" fx:controller="IstiaqueUtility.ServiceProviderController">
+   <children>
+      <Label layoutX="394.0" layoutY="101.0" />
+      <Button layoutY="-1.0" mnemonicParsing="false" onAction="#backButtonOnClick" prefHeight="31.0" prefWidth="83.0" text="Back" />
+      <Button layoutX="25.0" layoutY="143.0" mnemonicParsing="false" onAction="#viewProviderListButtonOnClick" text="View Provider List" />
+      <Button layoutX="447.0" layoutY="143.0" mnemonicParsing="false" onAction="#addNewProviderOnClick" text="Add New Provider" />
+      <TextField fx:id="addNewProviderTextField" layoutX="609.0" layoutY="143.0" prefHeight="31.0" prefWidth="267.0" />
+      <Button layoutX="449.0" layoutY="206.0" mnemonicParsing="false" onAction="#searchProviderOnClick" prefHeight="31.0" prefWidth="138.0" text="Search Provider" />
+      <TextField fx:id="searchProviderTextField" layoutX="609.0" layoutY="206.0" prefHeight="31.0" prefWidth="267.0" />
+      <Label fx:id="outputLabel" layoutX="17.0" layoutY="273.0" prefHeight="411.0" prefWidth="852.0" />
+   </children>
+</AnchorPane>
