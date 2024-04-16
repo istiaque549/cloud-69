@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="560.0" prefWidth="678.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171" fx:controller="IT_Admin.SendNotificationController">
+   <children>
+      <Label layoutX="282.0" layoutY="74.0" text="Send Notification" underline="true" />
+      <TextArea fx:id="notificationTextArea" layoutX="99.0" layoutY="144.0" prefHeight="200.0" prefWidth="494.0" />
+      <Button layoutX="99.0" layoutY="379.0" mnemonicParsing="false" onAction="#getConfirmationMessage" prefHeight="31.0" prefWidth="154.0" text="Send Notification" />
+      <Button layoutX="546.0" layoutY="493.0" mnemonicParsing="false" onAction="#goToNavigationMenu" text="Go Back" />
+   </children>
+</AnchorPane>
