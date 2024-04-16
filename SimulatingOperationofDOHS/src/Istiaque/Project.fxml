@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="612.0" prefWidth="856.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Istiaque.ProjectController">
+   <children>
+      <Label layoutX="640.0" layoutY="25.0" prefHeight="27.0" prefWidth="202.0" text="Development Projects">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Button layoutX="39.0" layoutY="110.0" mnemonicParsing="false" onAction="#previousProjectButtonOnClick" text="Previous Project" />
+      <Button layoutX="33.0" layoutY="162.0" mnemonicParsing="false" onAction="#upcomingProjectButonOnClick" text="Upcoming Project" />
+      <Label fx:id="outputLabel" layoutX="57.0" layoutY="233.0" prefHeight="360.0" prefWidth="749.0" />
+      <Button layoutX="6.0" layoutY="10.0" mnemonicParsing="false" onAction="#backButtonOnClick" prefHeight="31.0" prefWidth="63.0" text="Back" />
+   </children>
+</AnchorPane>
