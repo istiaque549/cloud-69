@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="576.0" prefWidth="792.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Istiaque.CantonmentBoardMemberDashboardController">
+   <children>
+      <VBox prefHeight="183.0" prefWidth="756.0">
+         <children>
+            <MenuBar prefHeight="45.0" prefWidth="756.0">
+              <menus>
+                <Menu mnemonicParsing="false" text="MyDesk">
+                  <items>
+                    <MenuItem mnemonicParsing="false" onAction="#employeeMenuItemOnClick" text="Employee" />
+                        <MenuItem mnemonicParsing="false" onAction="#projectMenuItemOnClick" text="Project" />
+                        <MenuItem mnemonicParsing="false" onAction="#recruitmentMenuItemOnClick" text="Recruitment" />
+                        <MenuItem mnemonicParsing="false" onAction="#policyMenuItemOnClick" text="Policy" />
+                        <MenuItem mnemonicParsing="false" onAction="#meetingMenuItemOnClick" text="Meeting" />
+                  </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Others">
+                  <items>
+                    <MenuItem mnemonicParsing="false" onAction="#aboutMenuItemOnClick" text="About" />
+                        <MenuItem mnemonicParsing="false" onAction="#viewPolicyMenuItemOnClick" text="View Policy" />
+                        <MenuItem mnemonicParsing="false" onAction="#backMenuItemOnClick" text="Back" />
+                  </items>
+                </Menu>
+              </menus>
+            </MenuBar>
+         </children>
+      </VBox>
+      <Label layoutX="248.0" layoutY="278.0" text="Welcome, Cantonment Board Member!">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
